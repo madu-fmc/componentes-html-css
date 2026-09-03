@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+div {
+    background-color: rgb(228, 139, 175);
+    text-align: center; 
+}
+div h1{ 
+    /*padding: 20px; espaçamento externo*/
+     margin: 20px; /*espaçamento externo*/
+}
+div h2{ 
+     margin: 20px; /*espaçamento externo*/
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+#inicio {
+    background-color: rgb(153, 127, 255);
+}
+/**/
+a {
+    text-decoration: none; /*tira a linhazinha do link*/
+    background-color:  rgb(225, 65, 222);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    display: block; /*ocupa o espaço todo*/
+    width: 150px;
+    margin: 10px auto;
+    border-radius: 10px;
+    border-style: solid black 1px;
+    transition: 1s;/*deixa a transição mais suave, é o tempo q ele leva pra fazer a transição*/
+}
+
+a:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(235, 0, 231); /*muda a cor do "botão" ao passar o mouse por cima*/
+    transform: scale(1.1); /*animaçao ao passar o mouse por cima*/
+    /*transition: 1s; ----deixa a transição mais suave, é o tempo q ele leva pra fazer a transição---
+     melhor colocar la em cima pois vai na ida e na volta*/
+}
+/* -----------------| TESTE |-----------------------
+body{
+    background-color: rgb(222, 123, 198); --cor de fundo
+    font-family: Arial, Helvetica, sans-serif; tipo de fonte
+    font-size: 20px; tamanho da fonte
+}
+h1{
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center; alinha o texto no centro
+}
+a {
+    color: rgb(200, 0, 255);
+}
+a:hover{
+    color: rgb(255, 0, 0);
+}
+*/
