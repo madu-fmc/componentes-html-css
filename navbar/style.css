@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(255, 239, 220);
+    
+}
+/**/
+#menu{
+    display: flex; /*deixa um do lado do outro*/
+    background-color: rgb(252, 205, 239);
+    border-radius: 20px;
+    justify-content: space-between; /*espaçamento entre logo e os itens da lista*/
+    padding: 10px;
+    width: auto;/*se fosse 100%, a largura seria 600px pois é 100%*/
+    max-width: 600px;
+    margin: 10px auto; /*p centralizar*/
+    align-items: center; /*alinha no centro*/
+}
+/*TODAS as listas sem pontinhos*/
+ul{
+    list-style: none;
+}
+#menu-lista{
+    display: flex; /*deixa um do lado do outro*/
+    gap: 20px; /*espaçamento entre os itens da ul*/
+    flex-wrap: wrap; /*qnd nn tiver espaço disponivel ele vai p baixo*/
+   
+}
+#menu-lista li a{
+    text-decoration: none; /*tira a linhazinha do link*/  
+    border-radius: 10px;
+    transition: 1s;
+    color: black;
+    padding: 10px;
+    display: block;
+    font-weight: bold; /*coloca em negrito*/
+}
+#menu-lista li a:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgba(235, 0, 231, 0.149); /*muda a cor do "botão" ao passar o mouse por cima*/
+    transform: scale(1.1); /*animaçao ao passar o mouse por cima*/
+}
+/*leva tipo pra # la em href (tipo #docs, procura o target, vai procurar o), pra deixar o ngc marcado fixo*/
+#menu-lista li a:target{
+    background-color: rgba(235, 0, 231, 0.477);
+    color: aliceblue;
+}
+h1{
+    color: rgba(235, 0, 231, 0.477);
+    font-family: Archivo Black;
+}
