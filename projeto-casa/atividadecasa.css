@@ -1,0 +1,82 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Montserrat;
+  }
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    background-image: url(horizonte.jpg);
+    background-size: cover;   /* a foto preenche todo o espaço, sem esticar/distorcer */
+    background-position: center; /* centraliza o "recorte" da foto */
+
+    display: flex;
+    align-items: center;      /* centraliza o texto verticalmente */
+    justify-content: center;  /* e horizontalmente */
+  }
+
+  /* camada de sombra*/
+  .sombra {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    /* degradê do fundo */
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.55) 0%,
+      rgba(0, 0, 0, 0.63) 45%,
+      rgba(0, 0, 0, 0.781) 100%
+    );
+  }
+
+  .conteudo {
+    position: relative;
+    z-index: 2; /* Todo o bloco de texto fica acima da sombra, sem isso o ngc preto fica em cima*/
+    text-align: center;
+    color: #fff;
+    padding: 0 20px; /* respiro nas laterais em telas estreitas */
+  }
+
+  .titulo {
+    font-size: 64px;
+    font-weight: 300;
+    letter-spacing: 18px; 
+    padding-left: 18px;
+  }
+
+
+  .subtitulo {
+    display: flex; /* pra alinhar tudo numa linha só */
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 28px;
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: #e5e5e5;
+  }
+
+  /* Os tracinhos decorativos */
+  .linha {
+    width: 60px;
+    height: 1px;
+    background: rgba(255,255,255,0.5);
+  }
+
+  .info {
+    margin-top: 22px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #d9d9d9;
+  }
+
+  .ano {
+    margin-top: 14px;
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #b5b5b5;
+  }
